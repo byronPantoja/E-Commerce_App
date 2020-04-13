@@ -1,5 +1,5 @@
 {
-    "name": "E-Commerce_App",
+    "name": "e_commerce_app",
     "version": "1.0.0",
     "description": "An E-Comm App with shopping cart, admin pages, and database.",
     "main": "index.js",

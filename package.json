@@ -1,0 +1,16 @@
+{
+    "name": "E-Commerce_App",
+    "version": "1.0.0",
+    "description": "JS E-Comm App",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "d3v833",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.3"
+    }
+}

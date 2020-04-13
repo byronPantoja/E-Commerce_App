@@ -1,7 +1,7 @@
 {
     "name": "E-Commerce_App",
     "version": "1.0.0",
-    "description": "JS E-Comm App",
+    "description": "An E-Comm App with shopping cart, admin pages, and database.",
     "main": "index.js",
     "scripts": {
         "dev": "nodemon index.js"

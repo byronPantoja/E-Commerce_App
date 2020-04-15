@@ -1,24 +1,24 @@
-const fs = require("fs");
-const crypto = require("crypto");
+const fs = require('fs');
+const crypto = require('crypto');
 
 class UsersRepository {
     constructor(filename) {
         if (!filename) {
-            throw new Error("Creating a repository requires a filename");
+            throw new Error('Creating a repository requires a filename');
         }
 
         this.filename = filename;
         try {
             fs.accessSync(this.filename);
         } catch (err) {
-            fs.writeFileSync(this.filename, "[]");
+            fs.writeFileSync(this.filename, '[]');
         }
     }
 
     async getAll() {
         return JSON.parse(
             await fs.promises.readFile(this.filename, {
-                encoding: "utf8",
+                encoding: 'utf8',
             })
         );
     }
@@ -30,6 +30,8 @@ class UsersRepository {
         records.push(attrs);
 
         await this.writeAll(records);
+
+        return attrs;
     }
     async writeAll(records) {
         await fs.promises.writeFile(
@@ -39,7 +41,7 @@ class UsersRepository {
     }
 
     randomId() {
-        return crypto.randomBytes(4).toString("hex");
+        return crypto.randomBytes(4).toString('hex');
     }
 
     async getOne(id) {
@@ -84,4 +86,4 @@ class UsersRepository {
     }
 }
 
-module.exports = new UsersRepository("users.json");
+module.exports = new UsersRepository('users.json');

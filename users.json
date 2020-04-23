@@ -43,5 +43,10 @@
     "email": "bee@test.com",
     "password": "eebdbc241497abc96d6957bcefc49955f6d10ecaf6cb6f775c180dc74d0d93edc0c59c2458d1728a18f56762650e9b94c60888c0297e03b6779fcba8fcbba242.7fdd4b025f6fe7a0",
     "id": "bf257aed"
+  },
+  {
+    "email": "joji@test.com",
+    "password": "1e45da27d195f224cf364b3af453dd42beb9b948c3dddcd0beb595643350aced1737bef70766ceb9f9e88a3ed79fe9b20446978dcc1133fffcaf2d878979edbd.29fb46e2888eecce",
+    "id": "5be4a9d9"
   }
 ]
